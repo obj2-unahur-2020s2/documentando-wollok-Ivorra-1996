@@ -1,12 +1,16 @@
 class Hogar {
-
+	//Instaciamos unas variables con el setter y getter,el tipo de dato es entero.
 	var property nivelMugre
 	var property confort
 
 	// Se considera que un hogar _es bueno_ 
-	// si su nivel de mugre es la mitad del confort que ofrece, o menos. 
+	// si su nivel de mugre es la mitad del confort que ofrece, o menos.
+	//Este metodo devuelve un tipo de dato boolenao , aunque tengo mis dudas porque no tiene el return D:.(lo debatimos con mariano y santi xD)
+	// la condicion pregunta si es menor o igual.
 	method esBueno() = nivelMugre <= confort / 2
-
+	
+	//Recibe por parametro objeto tipo plaga(Mosquito,Cucaracha,Garrapa,Pulgas),este metodo no duelve nada hace una asignaccion a una variable "nivelMugre"(Suma con un
+	 tipo de dato entero que devuel el metodo "nivelDanio").
 	method fueAtacado(plaga) {
 		nivelMugre += plaga.nivelDanio()
 	}
